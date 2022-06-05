@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body,html{
+    font-size: 30px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 5px;
+}
+.innerbox{
+    width: 35vw;
+    height: 35vh;
+    background-color:whitesmoke;
+    color: dimgray;
+    box-shadow: 0 15px 25px lightgray;
+}
+.imagebox{
+    z-index: -1;
+    height: 9vh;
+    background:black;
+    clip-path: polygon(83% 0%, 100% 0%,100% 0%, 100% 100%);
+}
+.telegram:hover{
+    /* transform: scale(0.8); */
+    transform:rotate(10deg);
+}
+.telegram{
+    background: black;
+    float: right;
+    width: 2vw;
+    margin: 10px 10px 0px 0px;
+}
+.qsign{
+    color: darkslategrey;
+    font-size:4rem;
+    margin-top: -7.5vh;
+    margin-left: 0.8vw;
+    height: 7vh;
+}
+#quotes{
+    font-family: cursive;
+    height: 12vh;
+    text-align: center;
+    font-size:0.75rem;
+    margin: 12px 12px;
+    font-style: italic;
+}
+#author{
+    margin-top: -15px;
+    float: right;
+    margin-right:3.5vw;
+    margin-bottom:12px;
+    font-size:0.8rem;
+    font-style: italic;
+}
+button{
+    margin-top:2vh;
+    background:black;
+    width: 100%;
+    color: whitesmoke;
+    font-size:1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 13px;
+    border: none;
+    outline:none;
+}
+button:hover{
+    background: rgba(0, 0, 0, 0.85);
+}
+
+@media only screen and (max-width: 1500px) {
+   .innerbox{
+    height: 32vh;
+    }
+    .qsign{
+        font-size: 3rem;
+    }
+  }
+@media only screen and (max-width: 650px) {
+   .innerbox{
+    height:100%;
+    width:100%;
+    }
+    .box{
+        background-color: white;
+        height:100%;
+        width:100%;
+    }
+    .telegram{
+        width:1rem;
+    }
+  
+    .qsign{
+        font-size: 3rem;
+    }
+  }
+
+@media only screen and (max-height: 1000px) {
+   .innerbox{
+    height:35vh;
+    }
+  }
+@media only screen and (max-height: 800px) {
+   .innerbox{
+    height:38vh;
+    }
+  }
