@@ -28,7 +28,7 @@ body,html{
 .innerbox{
     width: 35vw;
     height: 35vh;
-    background-color:whitesmoke;
+    background-color:white;
     color: dimgray;
     box-shadow: 0 15px 25px lightgray;
 }
